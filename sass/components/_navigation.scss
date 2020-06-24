@@ -1,0 +1,50 @@
+.nav{
+    display: flex;
+    justify-content: space-between;
+
+    &__logo{
+        display: flex;
+        img{
+            height: 4rem;
+        }
+
+        &-text{
+            font-size: 2rem;
+            color: $white;
+        }
+    }
+    &__list{
+        display: flex;
+        list-style: none;
+    }
+    &__link{
+        color: $white;
+        font-size: $font-s;
+        margin-right: 6rem;
+        text-decoration: none;
+        
+        &:visited,
+        &:hover,
+        &:active{
+            &::after{
+                content: '';
+                position: absolute;
+                width: 4rem;
+                display: block;
+                height: 2px;
+                background-color: $white;
+            }
+        }
+    }
+
+    &__button{
+        color: $blue;
+        background-color: $white;
+        font-size: $font-s;
+        text-decoration: none;
+        padding: 2px 14px;
+        height: fit-content;
+        border-radius: 15px;
+    }
+}
+

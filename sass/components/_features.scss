@@ -1,0 +1,81 @@
+.features::before{
+    content: '';
+    background: linear-gradient($white);
+    height: 65rem;
+    width: 100%;
+    position: absolute;
+    top: -50rem;
+    transform: scale(1.2);
+    left: 0;
+    border-radius: 0 0 50% 50%;
+    z-index: 0;
+}
+.features{
+    overflow: hidden;
+    position: relative;
+    margin-top: 25rem;
+    padding: 0 14rem;
+    padding-bottom: 15rem;
+    background: linear-gradient(270.61deg, $light 0.24%, $blue-light 99.55%);
+
+    &__content{
+        display: flex;
+        height: auto;
+        margin-top: 12rem;
+        &-img{
+            img{
+                height: 60rem;
+            }
+        }
+        &-box{
+            display: flex;
+            flex-wrap: wrap;
+            margin-left: 10rem;
+            width: 100%;
+            justify-content: space-between;
+            align-content: space-around;
+        }
+        &-item{
+            flex: 1 0 45%;
+            &:first-child{
+                margin-right: 4rem;
+            }
+            &:nth-child(3){
+                margin-right: 4rem;
+            }
+            &-img{
+                img{
+                    background: $white;
+                    padding: 1.2rem;
+                    height: 6rem;
+                    border-radius: 18px;
+                    margin-bottom: 4rem;
+                }
+            }
+            &-img1{
+                img{
+                    background: $blue;
+                    padding: 1.2rem;
+                    height: 6rem;
+                    border-radius: 18px;
+                    margin-bottom: 4rem;
+                }
+            }
+            &-primary{
+                font-size: $font-m;
+                font-weight: 500;
+                color: #272222;
+                margin-bottom: 1.8rem;
+
+                &:first-child{
+                    color: $blue;
+                }
+            }
+            &-secondary{
+                font-size: $font-xs;
+                color: #707070;
+                width: 28rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.review{
+    margin-top: 10rem;
+
+
+    &__box{
+        background-color: $off-white;
+        width: 70rem;
+        margin: 0 auto;
+        padding: 6rem;
+    }
+    &__quotes{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15rem;
+        color: #9A9A9A;
+        line-height: 17.6rem;
+        text-align: center;
+    }
+    &__text{
+        font-weight: 300;
+        font-size: $font-s;
+        line-height: 22px;
+        text-align: center;
+        color: #707070;;
+        font-family: Roboto;
+
+color: #707070;
+    }
+    &__name{
+        font-size: 25px;
+        line-height: 29px;
+        color: #272222;
+        text-align: center;
+        margin-top: 7rem;
+        font-family: Roboto;
+    }
+    &__stars{
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    &__star{
+        background-color: #F6CC12;
+        height: 20px;
+        width: 20px;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+        text-align: center;
+    }
+
+    &__people{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 9rem;
+    }
+    &__arrow{
+        margin-right: 6rem;
+    }
+    &__pictures{
+        img{
+            height: 6rem;
+            margin-right: 6rem;
+        }
+    }
+}
+.clients{
+    background-color: $off-white;
+    display: flex;
+    margin: 10rem 0;
+    padding: 8rem 0;
+    justify-content: center;
+    img{
+        height: 3.5rem;
+        margin-left: 10rem;
+    }
+}
