@@ -8,6 +8,7 @@
         margin: 0 auto;
         @include respond(phone){
             width: auto;
+            flex-direction: column;
         }
     }
     &__name,
@@ -15,6 +16,9 @@
         @include contact-form;
         flex: 1 0 24%;
         margin-right: 5rem;
+        @include respond(phone){
+            margin-right: 0;
+        }
         
     }
     &__email,

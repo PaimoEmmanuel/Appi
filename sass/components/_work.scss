@@ -12,6 +12,9 @@
      &-primary{
         font-size: $font-l;
         font-weight: 500;
+        @include respond(tab-port){
+            font-size: $font-l-r;
+        }
         
         &::after{
             content: '';

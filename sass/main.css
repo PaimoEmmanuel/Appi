@@ -168,7 +168,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .heading__secondary {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -330,7 +330,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .nav__link {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -364,7 +364,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .nav__link--button {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -410,6 +410,12 @@ body {
   font-weight: 500;
 }
 
+@media only screen and (max-width: 56.25em) {
+  .section__heading-primary {
+    font-size: 3.5rem;
+  }
+}
+
 .section__heading-primary::after {
   content: '';
   text-align: center;
@@ -428,7 +434,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .section__heading p {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
     text-align: center;
   }
 }
@@ -496,7 +502,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .work__content-item-primary {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -509,7 +515,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .work__content-item-secondary {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -702,7 +708,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .features__content-item-primary {
-    font-size: 2.4rem;
+    font-size: 2.8rem;
   }
 }
 
@@ -718,7 +724,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .features__content-item-secondary {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -784,7 +790,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .review__text {
-    font-size: 1.8rem;
+    font-size: 2.3rem;
   }
 }
 
@@ -1015,7 +1021,7 @@ body {
 @media only screen and (max-width: 56.25em) {
   .subscribe__form input,
   .subscribe__form input:focus {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1060,19 +1066,19 @@ body {
 @media only screen and (max-width: 56.25em) {
   .subscribe__form input::-webkit-input-placeholder,
   .subscribe__form input:focus::-webkit-input-placeholder {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
   .subscribe__form input:-ms-input-placeholder,
   .subscribe__form input:focus:-ms-input-placeholder {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
   .subscribe__form input::-ms-input-placeholder,
   .subscribe__form input:focus::-ms-input-placeholder {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
   .subscribe__form input::placeholder,
   .subscribe__form input:focus::placeholder {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1100,7 +1106,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .subscribe__form button {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -1137,6 +1143,10 @@ body {
 @media only screen and (max-width: 37.5em) {
   .contact__form {
     width: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -1199,6 +1209,21 @@ body {
       -ms-flex: 1 0 24%;
           flex: 1 0 24%;
   margin-right: 5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__name, .contact__name::-webkit-input-placeholder {
+    margin-right: 0;
+  }
+  .contact__name, .contact__name:-ms-input-placeholder {
+    margin-right: 0;
+  }
+  .contact__name, .contact__name::-ms-input-placeholder {
+    margin-right: 0;
+  }
+  .contact__name, .contact__name::placeholder {
+    margin-right: 0;
+  }
 }
 
 .contact__email, .contact__email::-webkit-input-placeholder {
@@ -1338,7 +1363,7 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   .contact__button {
-    font-size: 1.7rem;
+    font-size: 2.2rem;
   }
 }
 
