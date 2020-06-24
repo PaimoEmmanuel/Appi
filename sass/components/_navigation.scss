@@ -39,7 +39,7 @@
             flex-direction: column;
             justify-content: center;
             width: 100%;
-            background-color: $blue-light;
+            background: linear-gradient(269.18deg, #26A8FE 0.26%, #2A8BCC 49.66%, #13547F 99.47%);
             height: 0px;
             transition: all 0.3s ease-in;
             overflow-y: hidden;
@@ -55,7 +55,7 @@
             height: 0px;
           }
           #nav-check:checked ~ .nav__list {
-            height: auto;
+            height: 100%;
             margin-top: 1rem;
             padding: 10rem 0;
             overflow-y: auto;

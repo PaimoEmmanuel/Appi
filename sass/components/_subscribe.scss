@@ -77,6 +77,13 @@
             @include respond(tab-port){
                 font-size: $font-xs-r;
             }
+            @include respond(phone){
+                padding: 0 1rem;
+                width: auto;
+            }
+            svg{
+                margin-right: 1rem;
+            }
         }
     }
 }

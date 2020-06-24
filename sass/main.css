@@ -256,7 +256,7 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
     width: 100%;
-    background-color: #A8DAFF;
+    background: linear-gradient(269.18deg, #26A8FE 0.26%, #2A8BCC 49.66%, #13547F 99.47%);
     height: 0px;
     -webkit-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
@@ -277,7 +277,7 @@ body {
     height: 0px;
   }
   .nav #nav-check:checked ~ .nav__list {
-    height: auto;
+    height: 100%;
     margin-top: 1rem;
     padding: 10rem 0;
     overflow-y: auto;
@@ -1110,6 +1110,17 @@ body {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .subscribe__form button {
+    padding: 0 1rem;
+    width: auto;
+  }
+}
+
+.subscribe__form button svg {
+  margin-right: 1rem;
+}
+
 .contact {
   margin: 5rem 0;
   padding-left: 14rem;
@@ -1213,6 +1224,25 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .contact__name, .contact__name::-webkit-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__name, .contact__name:-ms-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__name, .contact__name::-ms-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__name, .contact__name::placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__name, .contact__name::-webkit-input-placeholder {
     margin-right: 0;
   }
   .contact__name, .contact__name:-ms-input-placeholder {
@@ -1283,6 +1313,25 @@ body {
           flex: 1 0 24%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .contact__email, .contact__email::-webkit-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__email, .contact__email:-ms-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__email, .contact__email::-ms-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__email, .contact__email::placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+}
+
 .contact__message, .contact__message::-webkit-input-placeholder {
   background: #E5E5E5;
   font-weight: 300;
@@ -1342,6 +1391,40 @@ body {
       -ms-flex: 2 0 98%;
           flex: 2 0 98%;
   padding-bottom: 12rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__message, .contact__message::-webkit-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__message, .contact__message:-ms-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__message, .contact__message::-ms-input-placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+  .contact__message, .contact__message::placeholder {
+    padding: 2.5rem 1rem;
+    font-size: 2.2rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .contact__message, .contact__message::-webkit-input-placeholder {
+    padding-bottom: 12rem;
+  }
+  .contact__message, .contact__message:-ms-input-placeholder {
+    padding-bottom: 12rem;
+  }
+  .contact__message, .contact__message::-ms-input-placeholder {
+    padding-bottom: 12rem;
+  }
+  .contact__message, .contact__message::placeholder {
+    padding-bottom: 12rem;
+  }
 }
 
 .contact__button {

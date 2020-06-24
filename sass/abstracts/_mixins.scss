@@ -57,6 +57,10 @@ $breakpoint arguments choices:
         outline: none;
         border-radius: 8px;
         margin-bottom: 5rem;
+        @include respond(phone){
+            padding: 2.5rem 1rem;
+            font-size: $font-xs-r;
+        }
 }
 //Max-width of the site
 @mixin max-width {
