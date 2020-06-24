@@ -9,20 +9,35 @@
     left: 0;
     border-radius: 0 0 50% 50%;
     z-index: 0;
+    @include respond(tab-port){
+        top: -77rem;
+        transform: scale(2);
+    }
 }
 .features{
     overflow: hidden;
     position: relative;
     margin-top: 25rem;
-    padding: 0 14rem;
+    @include page-margin;
     padding-bottom: 15rem;
     background: linear-gradient(270.61deg, $light 0.24%, $blue-light 99.55%);
+    @include respond(tab-port){
+        margin-top: 15rem;
+    }
 
     &__content{
+        @include max-width;
         display: flex;
         height: auto;
         margin-top: 12rem;
+        @include respond(phone){
+            display: block;
+        }
         &-img{
+            @include respond(phone){
+                display: flex;
+                justify-content: center;
+            }
             img{
                 height: 60rem;
             }
@@ -34,14 +49,34 @@
             width: 100%;
             justify-content: space-between;
             align-content: space-around;
+            @include respond(phone){
+                display: block;
+                margin-left: 0;
+            }
         }
         &-item{
             flex: 1 0 45%;
+            @include respond(tab-land){
+                margin-bottom: 5rem;
+            }
+            @include respond(phone){
+                margin-bottom: 0;
+                margin-top: 10rem;
+            }
+            @include respond(phone){
+                text-align: center;
+            }
             &:first-child{
                 margin-right: 4rem;
+                @include respond(phone){
+                    margin-right: 0;
+                }
             }
             &:nth-child(3){
                 margin-right: 4rem;
+                @include respond(phone){
+                    margin-right: 0;
+                }
             }
             &-img{
                 img{
@@ -50,6 +85,9 @@
                     height: 6rem;
                     border-radius: 18px;
                     margin-bottom: 4rem;
+                    @include respond(tab-port){
+                        margin-bottom: 1rem;
+                    }
                 }
             }
             &-img1{
@@ -59,6 +97,9 @@
                     height: 6rem;
                     border-radius: 18px;
                     margin-bottom: 4rem;
+                    @include respond(tab-port){
+                        margin-bottom: 1rem;
+                    }
                 }
             }
             &-primary{
@@ -66,6 +107,9 @@
                 font-weight: 500;
                 color: #272222;
                 margin-bottom: 1.8rem;
+                @include respond(tab-port){
+                    font-size: $font-m-r;
+                }
 
                 &:first-child{
                     color: $blue;
@@ -75,6 +119,13 @@
                 font-size: $font-xs;
                 color: #707070;
                 width: 28rem;
+                @include respond(tab-port){
+                    font-size: $font-xs-r;
+                }
+                @include respond(phone){
+                    width: 38rem;
+                    margin: 0 auto;
+                }
             }
         }
     }

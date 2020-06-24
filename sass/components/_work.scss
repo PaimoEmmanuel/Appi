@@ -1,8 +1,9 @@
 .section-work{
-    margin-top: 15rem;
-    padding: 0 14rem;
+    margin-top: 3rem;
+    @include page-margin;
 }
 .section__heading{
+    @include max-width;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -26,21 +27,38 @@
         font-size: $font-xs;
         font-weight: 300;
         margin-bottom: 10rem;
+        @include respond(tab-port){
+            font-size: $font-xs-r;
+            text-align: center;
+        }
     }
 }
 .work__content{
     display: flex;
-
+    @include max-width;
+    @include respond(tab-port){
+        display: block;
+        width: 50rem;
+    }
     
     &-item{
         display: flex;
         flex-direction: column;
+        @include respond(tab-port){
+            margin-bottom: 10rem;
+        }
         &:not(:first-child){
             margin-left: 5rem;
+            @include respond(phone){
+                margin-left: 0;
+            }
         }
         img{
             height: 8rem;
             margin-bottom: 8rem;
+            @include respond(tab-port){
+                margin-bottom: 3rem;
+            }
         }
         
         &-primary{
@@ -49,12 +67,18 @@
             color: #272222;
             text-align: center;
             margin-bottom: 4rem;
+            @include respond(tab-port){
+                font-size: $font-m-r;
+            }
         }
         &-secondary{
             font-size: $font-s;
             font-weight: 300;
             text-align: center;
-            color: #707070;;
+            color: #707070;
+            @include respond(tab-port){
+                font-size: $font-s-r;
+            }
         }
     }
 }

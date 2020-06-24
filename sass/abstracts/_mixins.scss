@@ -58,3 +58,23 @@ $breakpoint arguments choices:
         border-radius: 8px;
         margin-bottom: 5rem;
 }
+//Max-width of the site
+@mixin max-width {
+    max-width: calc(1440px - 14rem);
+    margin-left: auto;
+    margin-right: auto;
+}
+//Website margin
+@mixin page-margin{
+    padding-left: 14rem;
+    padding-right: 14rem;
+
+    @include respond(tab-port){
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+    @include respond(phone){
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}

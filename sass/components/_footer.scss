@@ -1,13 +1,29 @@
 .footer{
-    height: 20rem;
-    padding: 10rem 14rem;
+    @include page-margin;
     background-color: $blue;
+
+    &-wrapper{
+        @include max-width;
+        height: 20rem;
+    padding: 10rem 14rem;
     display: flex;
     justify-content: space-between;
 
+    @include respond(tab-port){
+        padding: 7rem 0;
+        height: auto;
+        flex-direction: column;
+    }
+    }
+    &__link{
+        @include respond(phone){
+            margin: 5rem auto;
+        }
+        
+    }
     &__icons{
         display: flex;
-
+        justify-content: center;
         img{
             height: 20px;
             margin-right: 4rem;

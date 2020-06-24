@@ -1,16 +1,83 @@
 .nav{
+    @include max-width;
     display: flex;
     justify-content: space-between;
+    #nav-check {
+        display: none;
+      }
+    @include respond(tab-port){
+        //display: none;
+         .nav-btn {
+            // display: inline-block;
+            // position: absolute;
+            // right: 0px;
+            // top: 0px;
+          }
+          .nav-btn > label {
+            display: inline-block;
+            width: auto;
+            height: auto;
+            padding: 1.2rem 1rem;
+            border-radius: 1rem;
+            background-color: $blue-light;
+          }
+        //   .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+        //     background-color: rgba(0, 0, 0, 0.3);
+        //   }
+          .nav-btn > label > span {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: $white;
+            &:not(:first-child){
+                margin-top: 1rem; 
+            }
+          }
+           .nav__list {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            background-color: $blue-light;
+            height: 0px;
+            transition: all 0.3s ease-in;
+            overflow-y: hidden;
+            top: 10rem;
+            left: 0px;
+          }
+           .nav__list > li {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+          }
+           #nav-check:not(:checked) ~ .nav__list {
+            height: 0px;
+          }
+          #nav-check:checked ~ .nav__list {
+            height: auto;
+            margin-top: 1rem;
+            padding: 10rem 0;
+            overflow-y: auto;
+          }
+    }
 
     &__logo{
         display: flex;
+        justify-content: center;
         img{
             height: 4rem;
+            @include respond(phone){
+                height: 6rem;
+            }
         }
 
         &-text{
             font-size: 2rem;
             color: $white;
+            @include respond(phone){
+                font-size: 3rem;
+            }
         }
     }
     &__list{
@@ -22,6 +89,13 @@
         font-size: $font-s;
         margin-right: 6rem;
         text-decoration: none;
+        @include respond(tab-port){
+            font-size: $font-s-r;
+        }
+        @include respond(tab-port){
+            font-size: 2.5rem;
+            margin-right: 0;
+        }
         
         &:visited,
         &:hover,
@@ -35,16 +109,18 @@
                 background-color: $white;
             }
         }
-    }
-
-    &__button{
-        color: $blue;
-        background-color: $white;
-        font-size: $font-s;
-        text-decoration: none;
-        padding: 2px 14px;
-        height: fit-content;
-        border-radius: 15px;
+        &--button{
+            color: $blue;
+            background-color: $white;
+            font-size: $font-s;
+            text-decoration: none;
+            padding: 2px 14px;
+            height: fit-content;
+            border-radius: 15px;
+            @include respond(tab-port){
+                font-size: $font-s-r;
+            }
+        }
     }
 }
 

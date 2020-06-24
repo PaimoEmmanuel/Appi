@@ -1,5 +1,6 @@
 .review{
     margin-top: 10rem;
+    @include page-margin;
 
 
     &__box{
@@ -7,6 +8,9 @@
         width: 70rem;
         margin: 0 auto;
         padding: 6rem;
+        @include respond(phone){
+            width: auto;
+        }
     }
     &__quotes{
         font-family: Roboto;
@@ -24,6 +28,9 @@
         text-align: center;
         color: #707070;;
         font-family: Roboto;
+        @include respond(tab-port){
+            font-size: $font-s-r;
+        }
 
 color: #707070;
     }
@@ -56,11 +63,39 @@ color: #707070;
     }
     &__arrow{
         margin-right: 6rem;
+        @include respond(phone){
+            margin-right: 2rem;
+        }
     }
     &__pictures{
+        display: flex;
+        @include respond(tab-port){
+            //flex-direction: column;
+        }
+        :nth-child(2){
+            @include respond(phone){
+                margin-right: 5rem;
+            }
+        }
+        :nth-child(3){
+            height: 12rem; 
+            margin: 0 2rem 3rem -3rem;
+        }
+        :nth-child(1),
+        :nth-child(5){
+            display: none;;
+        }
         img{
             height: 6rem;
             margin-right: 6rem;
+            align-self: baseline;
+            @include respond(tab-port){
+                margin-bottom: 2rem;
+            }
+            @include respond(phone){
+                margin-right: 3rem;
+            }
+            
         }
     }
 }
@@ -69,9 +104,19 @@ color: #707070;
     display: flex;
     margin: 10rem 0;
     padding: 8rem 0;
+    @include page-margin;
     justify-content: center;
+    @include respond(phone){
+        display: grid;
+    }
     img{
         height: 3.5rem;
         margin-left: 10rem;
+        @include respond(tab-land){
+            margin-left: 5rem;
+        }
+        @include respond(phone){
+            margin: 1rem 0;
+        }
     }
 }

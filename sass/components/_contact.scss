@@ -1,10 +1,14 @@
 .contact{
     margin: 5rem 0;
+    @include page-margin;
     &__form{
         display: flex;
         flex-wrap: wrap;
         width: 60rem;
         margin: 0 auto;
+        @include respond(phone){
+            width: auto;
+        }
     }
     &__name,
     &__name::placeholder{
@@ -35,5 +39,9 @@
         border-radius: 50px;
         padding: 1.5rem 1rem;
         box-shadow: 5px 5px 5px rgba($blue-lighter, 1);
+
+        @include respond(tab-port){
+            font-size: $font-xs-r;
+        }
     }
 }
