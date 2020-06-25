@@ -372,6 +372,7 @@ body {
   margin-top: 3rem;
   padding-left: 14rem;
   padding-right: 14rem;
+  overflow: hidden;
 }
 
 @media only screen and (max-width: 56.25em) {

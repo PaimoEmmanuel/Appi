@@ -1,6 +1,7 @@
 .section-work{
     margin-top: 3rem;
     @include page-margin;
+    overflow: hidden;
 }
 .section__heading{
     @include max-width;
